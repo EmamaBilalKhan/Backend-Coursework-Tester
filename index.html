@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Tester</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h3>
+        Get Users
+    </h3>
+    <textarea id="Get-User-Text" placeholder="Req Body..."></textarea>
+    <button id="Get-User-Button">
+        Send
+    </button>
+    <h3>
+        Create User
+    </h3>
+    <textarea id="Create-User-Text" placeholder="Req Body..."></textarea>
+    <p>
+        Format: usename and password are REQUIRED.
+            {
+            "username":"em",
+            "password":"12211111"
+            }
+    </p>
+    <button id="Create-User-button">Send</button>
+
+    <h3>
+        Update User
+    </h3>
+    <textarea id="Update-User-Text" placeholder="Req Body..."></textarea>
+    <p>
+        Format: Change either username or password using id (REQUIRED)
+            {
+            "id":"675ae5dcb826e575f0639c34",
+            "username":"em",
+            "password":"12211111"
+            }
+    </p>
+    <button id="Update-User-button">Send</button>
+
+    <h3>
+        Delete User
+    </h3>
+    <textarea id="Delete-User-Text" placeholder="Req Body..."></textarea>
+    <p>
+        Format: Delete user using id (REQUIRED)
+            {
+            "id":"675ae5dcb826e575f0639c34"
+            }
+    </p>
+    <button id="Delete-User-Button">Send</button>
+
+</body>
+
+</html>
+<script src="script.js"></script>
